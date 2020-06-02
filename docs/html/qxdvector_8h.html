@@ -1,0 +1,938 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QxdAlgoritmos: Referência do Arquivo /home/araruna/workspace/c/ed-qxalg/QxdAlg/qxdvector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="qxd0010.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">QxdAlgoritmos
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Biblioteca simples dos algoritmos e estruturas de dados vistos na disciplina QXD0010.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('qxdvector_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Definições de Tipos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo qxdvector.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="qxddefs_8h_source.html">qxddefs.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div>
+<p><a href="qxdvector_8h_source.html">Vá para o código-fonte deste arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Definições de Tipos</h2></td></tr>
+<tr class="memitem:a0e711c1a0c0966edae211bfd1b10170d"><td class="memItemLeft" align="right" valign="top">typedef struct __qxd_vector *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a></td></tr>
+<tr class="separator:a0e711c1a0c0966edae211bfd1b10170d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Gestão de vida</div></td></tr>
+<tr class="memitem:a1cf02f71334b477bd55b1c778ceaabdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a1cf02f71334b477bd55b1c778ceaabdb">qx_vector_new</a> (size_t initCapacity)</td></tr>
+<tr class="separator:a1cf02f71334b477bd55b1c778ceaabdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9a4a6173cadf5e85c090ebc840e7c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#aaa9a4a6173cadf5e85c090ebc840e7c2">qx_vector_delete</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:aaa9a4a6173cadf5e85c090ebc840e7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Consulta de estado</div></td></tr>
+<tr class="memitem:a3c3ad5662259142112bdf5255cb22cc8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a3c3ad5662259142112bdf5255cb22cc8">qx_vector_size</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:a3c3ad5662259142112bdf5255cb22cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e95937d9debbf226b4daad3be49d3b3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a5e95937d9debbf226b4daad3be49d3b3">qx_vector_capacity</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:a5e95937d9debbf226b4daad3be49d3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949212b507cbcf72d2e24595a39f51d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a949212b507cbcf72d2e24595a39f51d1">qx_vector_empty</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:a949212b507cbcf72d2e24595a39f51d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adedf5ee09d80034946a973db63a884e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#adedf5ee09d80034946a973db63a884e4">qx_vector_full</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:adedf5ee09d80034946a973db63a884e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Consulta de elementos</div></td></tr>
+<tr class="memitem:a1ae1d09e4bc4329370ce58554969b085"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a1ae1d09e4bc4329370ce58554969b085">qx_vector_contains</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element)</td></tr>
+<tr class="separator:a1ae1d09e4bc4329370ce58554969b085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea373c2e62dfe44b20c5938759a19289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#aea373c2e62dfe44b20c5938759a19289">qx_vector_find</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element, <a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> fromIndex)</td></tr>
+<tr class="separator:aea373c2e62dfe44b20c5938759a19289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ac8039f6c0c4aa64de816a11182228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a47ac8039f6c0c4aa64de816a11182228">qx_vector_find_last</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element, <a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> upToIndex)</td></tr>
+<tr class="separator:a47ac8039f6c0c4aa64de816a11182228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcea988299d87bf1f76ee1b5dfd6c4fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#afcea988299d87bf1f76ee1b5dfd6c4fc">qx_vector_at</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, <a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> index)</td></tr>
+<tr class="separator:afcea988299d87bf1f76ee1b5dfd6c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254a212b79db87b562bc124aba4ccf74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a254a212b79db87b562bc124aba4ccf74">qx_vector_font</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:a254a212b79db87b562bc124aba4ccf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f31466c3a5e65abf6671e701a6a8e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a45f31466c3a5e65abf6671e701a6a8e1">qx_vector_back</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:a45f31466c3a5e65abf6671e701a6a8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Modificação</div></td></tr>
+<tr class="memitem:a5c210f9db97a65e14b1f9d2d36e06ba3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a5c210f9db97a65e14b1f9d2d36e06ba3">qx_vector_insert_at</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element, <a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> index)</td></tr>
+<tr class="separator:a5c210f9db97a65e14b1f9d2d36e06ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad318d13a1c9fb5af39a8f65ade920c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#ad318d13a1c9fb5af39a8f65ade920c99">qx_vector_push_front</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element)</td></tr>
+<tr class="separator:ad318d13a1c9fb5af39a8f65ade920c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16dd9fedf3bfd0448e6553826e58e493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a16dd9fedf3bfd0448e6553826e58e493">qx_vector_push_back</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element)</td></tr>
+<tr class="separator:a16dd9fedf3bfd0448e6553826e58e493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e31bb24b72e2fef19169f58b021ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a24e31bb24b72e2fef19169f58b021ebc">qx_vector_remove_element_first</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element)</td></tr>
+<tr class="separator:a24e31bb24b72e2fef19169f58b021ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f6583ea8d16dc096f29ff4349d763e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#ab7f6583ea8d16dc096f29ff4349d763e">qx_vector_remove_element_last</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element)</td></tr>
+<tr class="separator:ab7f6583ea8d16dc096f29ff4349d763e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c4f26fff0d8805299dc2480feb5429"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a48c4f26fff0d8805299dc2480feb5429">qx_vector_remove_element_all</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, int element)</td></tr>
+<tr class="separator:a48c4f26fff0d8805299dc2480feb5429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4bc889c6e78bf45d75e3d8dbb06bd5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#ae4bc889c6e78bf45d75e3d8dbb06bd5f">qx_vector_remove_at</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, <a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> index)</td></tr>
+<tr class="separator:ae4bc889c6e78bf45d75e3d8dbb06bd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51bb90e77b34d45868a8b59754d53aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#ae51bb90e77b34d45868a8b59754d53aa">qx_vector_pop_front</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:ae51bb90e77b34d45868a8b59754d53aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1a8412643ea9c436b7f43255d95ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#abc1a8412643ea9c436b7f43255d95ecb">qx_vector_pop_back</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:abc1a8412643ea9c436b7f43255d95ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8c48627dcc96fb725bacb55c971c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a0d8c48627dcc96fb725bacb55c971c1a">qx_vector_clear</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector)</td></tr>
+<tr class="separator:a0d8c48627dcc96fb725bacb55c971c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Extras</div></td></tr>
+<tr class="memitem:a74507f92ddc0df37cca2151379291b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qxdvector_8h.html#a74507f92ddc0df37cca2151379291b87">qx_vector_print_to</a> (<a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> vector, FILE *fp)</td></tr>
+<tr class="separator:a74507f92ddc0df37cca2151379291b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições dos tipos</h2>
+<a id="a0e711c1a0c0966edae211bfd1b10170d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e711c1a0c0966edae211bfd1b10170d">&#9670;&nbsp;</a></span>QxVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct __qxd_vector* <a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Representa uma <em>Lista Sequencial</em>, ou apenas <em>Vetor</em>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="afcea988299d87bf1f76ee1b5dfd6c4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcea988299d87bf1f76ee1b5dfd6c4fc">&#9670;&nbsp;</a></span>qx_vector_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int qx_vector_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina o valor do elemento de um vetor em um determinado índice.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+    <tr><td class="paramname">index</td><td>Índice a considerar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Valor do elemento no índice <code>index</code>, caso exista; <a class="el" href="qxddefs_8h.html#aa01a677aa82288578ebe9cfc6dd758d2">QX_LAMBDA_ELEMENT</a> caso <code>index</code> esteja fora dos limites de <code>vector</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a45f31466c3a5e65abf6671e701a6a8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f31466c3a5e65abf6671e701a6a8e1">&#9670;&nbsp;</a></span>qx_vector_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int qx_vector_back </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina o valor do último elemento de um vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Valor do último elemento de <code>vector</code>, caso exista; <a class="el" href="qxddefs_8h.html#aa01a677aa82288578ebe9cfc6dd758d2">QX_LAMBDA_ELEMENT</a> caso <code>vector</code> esteja vazia. </dd></dl>
+
+</div>
+</div>
+<a id="a5e95937d9debbf226b4daad3be49d3b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e95937d9debbf226b4daad3be49d3b3">&#9670;&nbsp;</a></span>qx_vector_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t qx_vector_capacity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina a capacidade máxima atual do vetor.</p>
+<p>A diferença entre a capacidade e o tamanho determina o número de elementos que ainda podemos inserir sem causar uma realocação de memória no vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Número de espaços existentes para elementos no vetor. </dd></dl>
+
+</div>
+</div>
+<a id="a0d8c48627dcc96fb725bacb55c971c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8c48627dcc96fb725bacb55c971c1a">&#9670;&nbsp;</a></span>qx_vector_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qx_vector_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove <em>todos</em> os elementos de um vetor, tornando-o vazio.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ae1d09e4bc4329370ce58554969b085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae1d09e4bc4329370ce58554969b085">&#9670;&nbsp;</a></span>qx_vector_contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool qx_vector_contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina se um vetor possui um elemento com valor igual a um valor informado.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a procurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> se algum dos elementos de <code>vector</code> possui valor <code>element</code>; <code>false</code> caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="aaa9a4a6173cadf5e85c090ebc840e7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9a4a6173cadf5e85c090ebc840e7c2">&#9670;&nbsp;</a></span>qx_vector_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qx_vector_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Descarta um vetor. O uso do vetor informado após ser descartado não é válido.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor que será descartado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a949212b507cbcf72d2e24595a39f51d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949212b507cbcf72d2e24595a39f51d1">&#9670;&nbsp;</a></span>qx_vector_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool qx_vector_empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina se um vetor está ou não vazio.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> se <code>vector</code> informado não possui elementos; <code>false</code> caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="aea373c2e62dfe44b20c5938759a19289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea373c2e62dfe44b20c5938759a19289">&#9670;&nbsp;</a></span>qx_vector_find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> qx_vector_find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td>
+          <td class="paramname"><em>fromIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina o índice em um vetor da primeira ocorrência de um elemento com um valor informado.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a procurar. </td></tr>
+    <tr><td class="paramname">fromIndex</td><td>Índice a partir do qual considerar a busca, ou seja, a busca inicia neste índice. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Índice do primeiro elemento em <code>vector</code> com valor <code>element</code>, considerado a partir de <code>fromIndex</code>; <a class="el" href="qxddefs_8h.html#a16c0df25ff48fa676c40e3d00129bfb3">QX_LAMBDA_INDEX</a> caso nenhum elemento encontrado. </dd></dl>
+
+</div>
+</div>
+<a id="a47ac8039f6c0c4aa64de816a11182228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ac8039f6c0c4aa64de816a11182228">&#9670;&nbsp;</a></span>qx_vector_find_last()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> qx_vector_find_last </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td>
+          <td class="paramname"><em>upToIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina o índice em um vetor da última ocorrência de um elemento com um valor informado.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a procurar. </td></tr>
+    <tr><td class="paramname">upToIndex</td><td>Índice até o qual considerar a busca, ou seja, a busca vai no máximo até este índice. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Índice do último elemento em <code>vector</code> com valor <code>element</code>, considerado no máximo até <code>upToIndex</code>; <a class="el" href="qxddefs_8h.html#a16c0df25ff48fa676c40e3d00129bfb3">QX_LAMBDA_INDEX</a> caso nenhum elemento encontrado. </dd></dl>
+
+</div>
+</div>
+<a id="a254a212b79db87b562bc124aba4ccf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a254a212b79db87b562bc124aba4ccf74">&#9670;&nbsp;</a></span>qx_vector_font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int qx_vector_font </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina o valor do primeiro elemento de um vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Valor do primeiro elemento de <code>vector</code>, caso exista; <a class="el" href="qxddefs_8h.html#aa01a677aa82288578ebe9cfc6dd758d2">QX_LAMBDA_ELEMENT</a> caso <code>vector</code> esteja vazia. </dd></dl>
+
+</div>
+</div>
+<a id="adedf5ee09d80034946a973db63a884e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adedf5ee09d80034946a973db63a884e4">&#9670;&nbsp;</a></span>qx_vector_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool qx_vector_full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina se o vetor está com sua capacidade completamente ocupada por elementos.</p>
+<p>Ou seja, caso a resposta seja <code>true</code>, não há espaço livre para novos elementos, de forma que uma nova inserção causaria uma realocação de memória no vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> caso <code>vector</code> informado não possua espaço livre; <code>false</code> caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="a5c210f9db97a65e14b1f9d2d36e06ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c210f9db97a65e14b1f9d2d36e06ba3">&#9670;&nbsp;</a></span>qx_vector_insert_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool qx_vector_insert_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insere um novo elemento em um dado índice em um vetor, sem perder os elementos anteriores.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a inserir. </td></tr>
+    <tr><td class="paramname">index</td><td>Índice que o novo elemento deve ocupar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> se a inserção foi realizada; <code>false</code> caso <code>index</code> seja inválido para <code>vector</code> ou caso não haja mais memória. </dd></dl>
+
+</div>
+</div>
+<a id="a1cf02f71334b477bd55b1c778ceaabdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf02f71334b477bd55b1c778ceaabdb">&#9670;&nbsp;</a></span>qx_vector_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a> qx_vector_new </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>initCapacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cria um novo vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initCapacity</td><td>Capacidade inicial do vetor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Pré-Condição</dt><dd><code>initCapacity</code> &gt; 0 </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Novo vetor. </dd></dl>
+
+</div>
+</div>
+<a id="abc1a8412643ea9c436b7f43255d95ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1a8412643ea9c436b7f43255d95ecb">&#9670;&nbsp;</a></span>qx_vector_pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qx_vector_pop_back </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove o último elemento de um vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae51bb90e77b34d45868a8b59754d53aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51bb90e77b34d45868a8b59754d53aa">&#9670;&nbsp;</a></span>qx_vector_pop_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qx_vector_pop_front </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove o primeiro elemento de um vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74507f92ddc0df37cca2151379291b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74507f92ddc0df37cca2151379291b87">&#9670;&nbsp;</a></span>qx_vector_print_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qx_vector_print_to </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gera a impressão de todos os elementos de um vetor, ordenados pelo índice, no arquivo indicado. O arquivo informado pode inclusive ser uma das saídas padrão (<code>stdout</code> ou <code>stderr</code>).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+    <tr><td class="paramname">fp</td><td>Arquivo onde imprimir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Veja também</dt><dd><a href="https://www.tutorialspoint.com/c_standard_library/c_function_fprintf.htm" target="_blank" rel="noreferrer noopener">fprintf</a> </dd></dl>
+
+</div>
+</div>
+<a id="a16dd9fedf3bfd0448e6553826e58e493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dd9fedf3bfd0448e6553826e58e493">&#9670;&nbsp;</a></span>qx_vector_push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qx_vector_push_back </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insere um novo elemento no <em>fim</em> de um vetor, sem perder os elementos anteriores.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a inserir. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad318d13a1c9fb5af39a8f65ade920c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad318d13a1c9fb5af39a8f65ade920c99">&#9670;&nbsp;</a></span>qx_vector_push_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qx_vector_push_front </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insere um novo elemento no <em>início</em> de um vetor, sem perder os elementos anteriores.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a inserir. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4bc889c6e78bf45d75e3d8dbb06bd5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4bc889c6e78bf45d75e3d8dbb06bd5f">&#9670;&nbsp;</a></span>qx_vector_remove_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool qx_vector_remove_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove um elemento de um vetor num índice dado.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+    <tr><td class="paramname">index</td><td>Índice do elemento a ser removido. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> caso a remoção tenha ocorrido; <code>false</code> caso <code>index</code> seja inválido para <code>vector</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a48c4f26fff0d8805299dc2480feb5429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c4f26fff0d8805299dc2480feb5429">&#9670;&nbsp;</a></span>qx_vector_remove_element_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t qx_vector_remove_element_all </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove de um vetor <em>todos</em> os elementos com um dado valor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a procurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Quantidade de elementos removidos </dd></dl>
+
+</div>
+</div>
+<a id="a24e31bb24b72e2fef19169f58b021ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e31bb24b72e2fef19169f58b021ebc">&#9670;&nbsp;</a></span>qx_vector_remove_element_first()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> qx_vector_remove_element_first </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove de um vetor o <em>primeiro</em> elemento com um dado valor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a procurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Índice que o elemento removido <em>ocupava</em> no vetor; <a class="el" href="qxddefs_8h.html#a16c0df25ff48fa676c40e3d00129bfb3">QX_LAMBDA_INDEX</a> caso não exista em <code>vector</code> elemento com valor <code>element</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ab7f6583ea8d16dc096f29ff4349d763e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f6583ea8d16dc096f29ff4349d763e">&#9670;&nbsp;</a></span>qx_vector_remove_element_last()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> qx_vector_remove_element_last </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove de um vetor o <em>último</em> elemento com um dado valor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a modificar. </td></tr>
+    <tr><td class="paramname">element</td><td>Valor a procurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Índice que o elemento removido <em>ocupava</em> no vetor; <a class="el" href="qxddefs_8h.html#a16c0df25ff48fa676c40e3d00129bfb3">QX_LAMBDA_INDEX</a> caso não exista em <code>vector</code> elemento com valor <code>element</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a3c3ad5662259142112bdf5255cb22cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3ad5662259142112bdf5255cb22cc8">&#9670;&nbsp;</a></span>qx_vector_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t qx_vector_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="qxdvector_8h.html#a0e711c1a0c0966edae211bfd1b10170d">QxVector</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determina o tamanho de um vetor.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Vetor a consultar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Número de elementos no vetor. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_79d2eedf70e2c1f7f0f0e88e03081d56.html">QxdAlg</a></li><li class="navelem"><a class="el" href="qxdvector_8h.html">qxdvector.h</a></li>
+    <li class="footer">Gerado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QxdAlgoritmos: Código-Fonte de /home/araruna/workspace/c/ed-qxalg/QxdAlg/qxdsearching.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="qxd0010.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">QxdAlgoritmos
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Biblioteca simples dos algoritmos e estruturas de dados vistos na disciplina QXD0010.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('qxdsearching_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">qxdsearching.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="qxdsearching_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> **  @file   qxdsearching.hpp</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> **  @date   2018-8-13</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> **  @author Arthur Rodrigues Araruna &lt;ararunaufc(at)gmail.com&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> **  @brief</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> **  Definition of all functions related to searching in the library.</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> **  @copyright</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> **  This source code is part of an educational project, associated with</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> **  an undergraduate course or extension project, that is hosted at</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> **  Universidade Federal do Ceará, Campus Quixadá.</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> **  Copyright (C) 2018 UFC Quixadá, All Rights Reserved.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> **  This project is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> **  it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> **  the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> **  (at your option) any later version.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> **  This project is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> **  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> **  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> **  GNU General Public License for more details.</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> **  You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> **  along with the source code of this project. If not, see</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> **  &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *************************************************************************/</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef QXDSEARCHING_H</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define QXDSEARCHING_H</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="qxddefs_8h.html">qxddefs.h</a>&quot;</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//. OBSERVAÇÕES</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//.</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//. - Não altere este arquivo.</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//. - Nos arquivos de implementação você pode definir outras funções para que</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//.   sejam usadas como auxiliares das neste arquivo.</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dd">   51</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda7f3f4f8ee06b32b4aa2d6289dd944547">   52</a></span>&#160;    <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda7f3f4f8ee06b32b4aa2d6289dd944547">ARRAY_NOT_SORTED</a>, </div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda5ef4cb7bfb185cdb02a19512b9b977fd">   53</a></span>&#160;    <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda5ef4cb7bfb185cdb02a19512b9b977fd">ARRAY_ASC</a>,        </div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda07411b572d967b4a6f17d4ea26e08cb0">   54</a></span>&#160;    <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda07411b572d967b4a6f17d4ea26e08cb0">ARRAY_DESC</a>        </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dd">qxSortType</a>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="qxdsearching_8h.html#a5167f89283c53469a60b6ba4094b3c01">qx_contains</a>(<span class="keywordtype">int</span> array[], <span class="keywordtype">size_t</span> num_elems, <span class="keywordtype">int</span> element, <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dd">qxSortType</a> sorting);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> <a class="code" href="qxdsearching_8h.html#a1bf5ab8af875994f4bcb7f914a2d0ee5">qx_find_index</a>(<span class="keywordtype">int</span> array[], <span class="keywordtype">size_t</span> num_elems, <span class="keywordtype">int</span> element, <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dd">qxSortType</a> sorting);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> <a class="code" href="qxdsearching_8h.html#a70ad78a9ec11728994fa017827cc6802">qx_lower_bound</a>(<span class="keywordtype">int</span> array[], <span class="keywordtype">size_t</span> num_elems, <span class="keywordtype">int</span> element, <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dd">qxSortType</a> sorting);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a> <a class="code" href="qxdsearching_8h.html#a9dff0aa26874d22541682e69699d41af">qx_upper_bound</a>(<span class="keywordtype">int</span> array[], <span class="keywordtype">size_t</span> num_elems, <span class="keywordtype">int</span> element, <a class="code" href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dd">qxSortType</a> sorting);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // QXDSEARCHING_H</span></div><div class="ttc" id="qxdsearching_8h_html_a266b6d8861d216d769aaed38ce9c56dda5ef4cb7bfb185cdb02a19512b9b977fd"><div class="ttname"><a href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda5ef4cb7bfb185cdb02a19512b9b977fd">ARRAY_ASC</a></div><div class="ttdef"><b>Definition:</b> qxdsearching.h:53</div></div>
+<div class="ttc" id="qxdsearching_8h_html_a70ad78a9ec11728994fa017827cc6802"><div class="ttname"><a href="qxdsearching_8h.html#a70ad78a9ec11728994fa017827cc6802">qx_lower_bound</a></div><div class="ttdeci">qxIndex qx_lower_bound(int array[], size_t num_elems, int element, qxSortType sorting)</div><div class="ttdoc">Determina o índice no vetor onde encontramos o elemento ínfimo do elemento informado. </div></div>
+<div class="ttc" id="qxdsearching_8h_html_a266b6d8861d216d769aaed38ce9c56dd"><div class="ttname"><a href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dd">qxSortType</a></div><div class="ttdeci">qxSortType</div><div class="ttdoc">Descreve o tipo de ordenação de um vetor. </div><div class="ttdef"><b>Definition:</b> qxdsearching.h:51</div></div>
+<div class="ttc" id="qxdsearching_8h_html_a266b6d8861d216d769aaed38ce9c56dda07411b572d967b4a6f17d4ea26e08cb0"><div class="ttname"><a href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda07411b572d967b4a6f17d4ea26e08cb0">ARRAY_DESC</a></div><div class="ttdef"><b>Definition:</b> qxdsearching.h:54</div></div>
+<div class="ttc" id="qxdsearching_8h_html_a9dff0aa26874d22541682e69699d41af"><div class="ttname"><a href="qxdsearching_8h.html#a9dff0aa26874d22541682e69699d41af">qx_upper_bound</a></div><div class="ttdeci">qxIndex qx_upper_bound(int array[], size_t num_elems, int element, qxSortType sorting)</div><div class="ttdoc">Determina o índice no vetor onde encontramos o elemento supremo do elemento informado. </div></div>
+<div class="ttc" id="qxdsearching_8h_html_a266b6d8861d216d769aaed38ce9c56dda7f3f4f8ee06b32b4aa2d6289dd944547"><div class="ttname"><a href="qxdsearching_8h.html#a266b6d8861d216d769aaed38ce9c56dda7f3f4f8ee06b32b4aa2d6289dd944547">ARRAY_NOT_SORTED</a></div><div class="ttdef"><b>Definition:</b> qxdsearching.h:52</div></div>
+<div class="ttc" id="qxdsearching_8h_html_a5167f89283c53469a60b6ba4094b3c01"><div class="ttname"><a href="qxdsearching_8h.html#a5167f89283c53469a60b6ba4094b3c01">qx_contains</a></div><div class="ttdeci">bool qx_contains(int array[], size_t num_elems, int element, qxSortType sorting)</div><div class="ttdoc">Determina se o vetor contém o elemento informado em uma de suas posições. </div></div>
+<div class="ttc" id="qxddefs_8h_html"><div class="ttname"><a href="qxddefs_8h.html">qxddefs.h</a></div></div>
+<div class="ttc" id="qxdsearching_8h_html_a1bf5ab8af875994f4bcb7f914a2d0ee5"><div class="ttname"><a href="qxdsearching_8h.html#a1bf5ab8af875994f4bcb7f914a2d0ee5">qx_find_index</a></div><div class="ttdeci">qxIndex qx_find_index(int array[], size_t num_elems, int element, qxSortType sorting)</div><div class="ttdoc">Determina o índice onde podemos encontrar o elemento no vetor informados. </div></div>
+<div class="ttc" id="qxddefs_8h_html_a62a7d33207eb2c250a8f728dbefa37c7"><div class="ttname"><a href="qxddefs_8h.html#a62a7d33207eb2c250a8f728dbefa37c7">qxIndex</a></div><div class="ttdeci">size_t qxIndex</div><div class="ttdoc">Usado sempre que o parâmetro ou retorno disser respeito a um índice de um vetor ou lista...</div><div class="ttdef"><b>Definition:</b> qxddefs.h:70</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_79d2eedf70e2c1f7f0f0e88e03081d56.html">QxdAlg</a></li><li class="navelem"><a class="el" href="qxdsearching_8h.html">qxdsearching.h</a></li>
+    <li class="footer">Gerado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QxdAlgoritmos: Código-Fonte de /home/araruna/workspace/c/ed-qxalg/QxdAlg/qxdstack.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="qxd0010.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">QxdAlgoritmos
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Biblioteca simples dos algoritmos e estruturas de dados vistos na disciplina QXD0010.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('qxdstack_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">qxdstack.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="qxdstack_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> **  @file   qxdstack.h</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> **  @date   2018-11-19</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> **  @author Arthur Rodrigues Araruna &lt;ararunaufc(at)gmail.com&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> **  @brief</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> **  @copyright</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> **  This source code is part of an educational project, associated with</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> **  an undergraduate course or extension project, that is hosted at</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> **  Universidade Federal do Ceará, Campus Quixadá.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> **  Copyright (C) 2018 UFC Quixadá, All Rights Reserved.</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> **  This project is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> **  it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> **  the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> **  (at your option) any later version.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> **  This project is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> **  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> **  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> **  GNU General Public License for more details.</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> **  You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> **  along with the source code of this project. If not, see</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> **  &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> **</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *************************************************************************/</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef ED_QXALG_QXDSTACK_H</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define ED_QXALG_QXDSTACK_H</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="qxddefs_8h.html">qxddefs.h</a>&quot;</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//. OBSERVAÇÕES</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//.</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//. - Não altere este arquivo.</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//. - Nos arquivos de implementação você pode definir outras funções para que</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//.   sejam usadas como auxiliares das neste arquivo.</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">struct </span>__qxd_stack;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>__qxd_stack *<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> <a class="code" href="qxdstack_8h.html#a621b401bfdecd9d83bf3eaa1c54ecb02">qx_stack_new</a>(<span class="keywordtype">size_t</span> initCapacity);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="qxdstack_8h.html#a33f67dd4c4bad50e332772cf0a8284a7">qx_stack_delete</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="qxdstack_8h.html#a1b5ab204e6bfb1516a312ed35a5b582a">qx_stack_size</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="qxdstack_8h.html#aa4531b805100060971509d2c5da80c22">qx_stack_capacity</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="qxdstack_8h.html#afda86e6a39eba9a7b280a9587e1d93fb">qx_stack_empty</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="qxdstack_8h.html#af5410fc5b8ab95e2098f71a222b1a1e6">qx_stack_full</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">int</span> <a class="code" href="qxdstack_8h.html#a8a3db19974a58acab8533b45a380621a">qx_stack_top</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="qxdstack_8h.html#a4f9ec886495619b8b05d8b127eab0253">qx_stack_contains</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack, <span class="keywordtype">int</span> element);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="qxdstack_8h.html#afb8e54cb6b7b17e97fcaaef219f30712">qx_stack_find</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack, <span class="keywordtype">int</span> element);</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">void</span> <a class="code" href="qxdstack_8h.html#a6c743e0d08458700b98dc580dff04c7d">qx_stack_push</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack, <span class="keywordtype">int</span> elem);</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keywordtype">void</span> <a class="code" href="qxdstack_8h.html#ad4fda68e3bcce5064cec4965ceba1afb">qx_stack_pop</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keywordtype">void</span> <a class="code" href="qxdstack_8h.html#add492330313f747d2cc3598caada93db">qx_stack_clear</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack);</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">void</span> <a class="code" href="qxdstack_8h.html#a0cbde78e028a2e3c9a5a23f810b15af3">qx_stack_print_to</a>(<a class="code" href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a> stack, FILE *fp);</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#endif //ED_QXALG_QXDSTACK_H</span></div><div class="ttc" id="qxdstack_8h_html_a6c743e0d08458700b98dc580dff04c7d"><div class="ttname"><a href="qxdstack_8h.html#a6c743e0d08458700b98dc580dff04c7d">qx_stack_push</a></div><div class="ttdeci">void qx_stack_push(QxStack stack, int elem)</div></div>
+<div class="ttc" id="qxdstack_8h_html_a4f9ec886495619b8b05d8b127eab0253"><div class="ttname"><a href="qxdstack_8h.html#a4f9ec886495619b8b05d8b127eab0253">qx_stack_contains</a></div><div class="ttdeci">bool qx_stack_contains(QxStack stack, int element)</div></div>
+<div class="ttc" id="qxdstack_8h_html_a33f67dd4c4bad50e332772cf0a8284a7"><div class="ttname"><a href="qxdstack_8h.html#a33f67dd4c4bad50e332772cf0a8284a7">qx_stack_delete</a></div><div class="ttdeci">void qx_stack_delete(QxStack stack)</div></div>
+<div class="ttc" id="qxdstack_8h_html_a8a3db19974a58acab8533b45a380621a"><div class="ttname"><a href="qxdstack_8h.html#a8a3db19974a58acab8533b45a380621a">qx_stack_top</a></div><div class="ttdeci">int qx_stack_top(QxStack stack)</div></div>
+<div class="ttc" id="qxdstack_8h_html_a621b401bfdecd9d83bf3eaa1c54ecb02"><div class="ttname"><a href="qxdstack_8h.html#a621b401bfdecd9d83bf3eaa1c54ecb02">qx_stack_new</a></div><div class="ttdeci">QxStack qx_stack_new(size_t initCapacity)</div></div>
+<div class="ttc" id="qxdstack_8h_html_add492330313f747d2cc3598caada93db"><div class="ttname"><a href="qxdstack_8h.html#add492330313f747d2cc3598caada93db">qx_stack_clear</a></div><div class="ttdeci">void qx_stack_clear(QxStack stack)</div></div>
+<div class="ttc" id="qxdstack_8h_html_afb8e54cb6b7b17e97fcaaef219f30712"><div class="ttname"><a href="qxdstack_8h.html#afb8e54cb6b7b17e97fcaaef219f30712">qx_stack_find</a></div><div class="ttdeci">size_t qx_stack_find(QxStack stack, int element)</div></div>
+<div class="ttc" id="qxdstack_8h_html_af5410fc5b8ab95e2098f71a222b1a1e6"><div class="ttname"><a href="qxdstack_8h.html#af5410fc5b8ab95e2098f71a222b1a1e6">qx_stack_full</a></div><div class="ttdeci">bool qx_stack_full(QxStack stack)</div></div>
+<div class="ttc" id="qxdstack_8h_html_a25db40b693fd1604e695fab3badcca57"><div class="ttname"><a href="qxdstack_8h.html#a25db40b693fd1604e695fab3badcca57">QxStack</a></div><div class="ttdeci">struct __qxd_stack * QxStack</div><div class="ttdef"><b>Definition:</b> qxdstack.h:52</div></div>
+<div class="ttc" id="qxddefs_8h_html"><div class="ttname"><a href="qxddefs_8h.html">qxddefs.h</a></div></div>
+<div class="ttc" id="qxdstack_8h_html_a1b5ab204e6bfb1516a312ed35a5b582a"><div class="ttname"><a href="qxdstack_8h.html#a1b5ab204e6bfb1516a312ed35a5b582a">qx_stack_size</a></div><div class="ttdeci">size_t qx_stack_size(QxStack stack)</div></div>
+<div class="ttc" id="qxdstack_8h_html_ad4fda68e3bcce5064cec4965ceba1afb"><div class="ttname"><a href="qxdstack_8h.html#ad4fda68e3bcce5064cec4965ceba1afb">qx_stack_pop</a></div><div class="ttdeci">void qx_stack_pop(QxStack stack)</div></div>
+<div class="ttc" id="qxdstack_8h_html_afda86e6a39eba9a7b280a9587e1d93fb"><div class="ttname"><a href="qxdstack_8h.html#afda86e6a39eba9a7b280a9587e1d93fb">qx_stack_empty</a></div><div class="ttdeci">bool qx_stack_empty(QxStack stack)</div></div>
+<div class="ttc" id="qxdstack_8h_html_a0cbde78e028a2e3c9a5a23f810b15af3"><div class="ttname"><a href="qxdstack_8h.html#a0cbde78e028a2e3c9a5a23f810b15af3">qx_stack_print_to</a></div><div class="ttdeci">void qx_stack_print_to(QxStack stack, FILE *fp)</div></div>
+<div class="ttc" id="qxdstack_8h_html_aa4531b805100060971509d2c5da80c22"><div class="ttname"><a href="qxdstack_8h.html#aa4531b805100060971509d2c5da80c22">qx_stack_capacity</a></div><div class="ttdeci">size_t qx_stack_capacity(QxStack stack)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_79d2eedf70e2c1f7f0f0e88e03081d56.html">QxdAlg</a></li><li class="navelem"><a class="el" href="qxdstack_8h.html">qxdstack.h</a></li>
+    <li class="footer">Gerado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
